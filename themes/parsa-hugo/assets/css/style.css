@@ -11,8 +11,11 @@ VERSION:	Versoin Number
 /* color: #ff6f00; */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 @font-face {
-  font-family: 'hanskendrick';
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  /* font-family: 'hanskendrick'; */
   src: url("../fonts/hanskendrick-regular-webfont.woff") format("woff");
   font-style: normal;
   font-display: swap;
@@ -20,28 +23,31 @@ VERSION:	Versoin Number
 
 body {
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 20px;
   color: #585757;
 }
 
 p, .paragraph {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 21px;
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
-  font-family: "hanskendrick";
+  font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 600;
   line-height: 1.2;
+  /* font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif; */
 }
 
 h1, .h1 {
-  font-size: 80px;
+  font-size: 90px;
 }
 
 @media (max-width: 767px) {
@@ -51,7 +57,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 @media (max-width: 767px) {
@@ -61,26 +67,27 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h4, .h4 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h6, .h6 {
-  font-size: 16px;
+  font-size: 25px;
 }
 
 /* Button style */
 .btn {
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: capitalize;
+  font-size: 21px;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  /* text-transform: capitalize; */
   padding: 8px 20px;
   border-radius: 0;
   font-weight: 600;
@@ -356,7 +363,8 @@ a.text-dark:hover {
 }
 
 .font-secondary {
-  font-family: "hanskendrick" !important;
+  /* font-family: "hanskendrick" !important; */
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
 }
 
 .mb-10 {
@@ -590,8 +598,9 @@ textarea.form-control {
 }
 
 .pagination .page-item .page-link {
-  font-family: "hanskendrick";
-  font-size: 30px;
+  /* font-family: "hanskendrick"; */
+  font-family: Fira Code,Source Code Pro,Microsoft JhengHei,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-size: 20px;
   border: 0;
   color: #585757;
 }

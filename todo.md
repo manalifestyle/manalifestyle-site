@@ -1,0 +1,3 @@
+- fixed height if featured type in homepage.
+- move categories and tags section to buttom of article.
+- remove carousel and hero section?

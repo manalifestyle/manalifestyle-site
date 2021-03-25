@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h4>{{ .Title }}</h4>
+        <h2>{{ .Title }}</h2>
       </div>
     </div>
   </div>
@@ -19,15 +19,32 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
-        <ul class="list-inline d-flex justify-content-between py-3">
-          <li class="list-inline-item"><i class="ti-user mr-2"></i>Post by {{site.Params.author}}</li>
-          <li class="list-inline-item"><i class="ti-calendar mr-2"></i>{{ .PublishDate.Format "Jan 02, 2006" }}</li>
-        </ul>
-        <article class="content">
-          <img src="{{.Params.Image | absURL }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+      <div class="col-lg-12">
+        <article class="content my-5">
+          <img src="{{.Params.Image | absURL }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 my-5">
           {{.Content}}
         </article>
+        <div>
+        tags:
+        <ul class="list-inline tag-list" style="display: inline">
+          {{range .Params.Tags}}
+          <li class="list-inline-item m-1"><a style="display: inline" href="{{ "tags/" | relLangURL }}{{ . | urlize | lower }}/">#{{ . }}</a></li>
+          {{- end }}
+        </ul>
+        </div>
+        <hr>
+        <ul class="list-inline d-flex justify-content-between py-3">
+          <li class="list-inline-item"><i class="ti-user mr-2"></i>{{site.Params.author}}</li>
+        </ul>
+        <ul class="list-inline d-flex justify-content-between pb-3">
+          <li class="list-inline-item"><i class="ti-calendar mr-2"></i>{{ .PublishDate.Format "Jan 02, 2006" }}</li>
+        </ul>
+        <hr>
+        <!-- <ul class="list-inline d-flex justify-content-between pb-3 tag-list">
+          <li class="list-inline-item">
+            <i class="ti-bookmark mr-2"></i>Category: {{range .Params.Categories}}<a style="display: inline" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}/">{{ . }}</a>{{end}}
+          </li>
+        </ul> -->
       </div>
       {{partial "sidebar.html" . }}
     </div>

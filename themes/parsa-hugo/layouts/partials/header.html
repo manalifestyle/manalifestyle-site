@@ -11,7 +11,7 @@
         {{ range site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
-          <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             {{ .Name }}
           </a>
@@ -23,7 +23,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          <a class="nav-link text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         {{ end }}
